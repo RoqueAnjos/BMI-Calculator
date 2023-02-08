@@ -15,8 +15,8 @@ const [errorMessage, setErrorMessase] = useState(null);
 
 
 function imcCalculator(){
-    let heightFormat = height.replace(",", ".   ");
-    let weightFormat = height.replace(",", ".   ");
+    let heightFormat = height.replace(",", ".");
+    let weightFormat = weight.replace(",", ".");
     return setImc((weightFormat/(heightFormat*heightFormat)).toFixed(2));
 }
 
@@ -58,7 +58,7 @@ function validationImc(){
                     placeholder="Ex: 1.75"
                     keyboardType="numeric"  />
                     
-                    <Text>Peso</Text>
+                    <Text style={styles.formLabel}>Peso</Text>
                     <Text style={styles.errorMessage}>{errorMessage}</Text>
                     <TextInput style={styles.input}
                     onChangeText={setWeight}

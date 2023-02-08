@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     formContext: {
         flex: 1,
         width: "100%",
-        height: "100%", 
+        height: "auto", 
         backgroundColor: "#fff",
         alignItems: "center",
         paddingTop: 30,
@@ -36,13 +36,13 @@ const styles = StyleSheet.create({
     ButtonCalculator:{
         backgroundColor: "#ff0043",
         borderRadius: 50,
-        alignItems: center,
-        justifyContent: center,
+        alignItems: "center",
+        justifyContent: "center",
         width: "90%",
         paddingTop: 14,
         paddingBottom: 14,
         marginLeft: 12,
-        margin: 30,
+        marginTop: 30,
     },
 
     textButtonCalculator:{
